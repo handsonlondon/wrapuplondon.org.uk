@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'BentonSans';
+  src: url('fonts/BentonSans.woff2') format('woff2'),
+  url('fonts/BentonSans.woff') format('woff');
+}
+
+body {
+  font-family: 'BentonSans', sans-serif;
+  line-height: 1.2em;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+}
+
+.grey-section {
+  color: white;
+  background-color: rgb(141, 164, 168);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blue-background {
+  color: white;
+  background-color: #25285b;
+}
+
+.red-background {
+  color: white;
+  background-color: rgb(214, 53, 53);
+}
+
+.whitesmoke-background {
+  background-color: whitesmoke;
+}
+
+.red-background a {
+  color: white;
+}
+
+.red-background a:hover {
+  text-decoration: underline;
+}
+
+.donate-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.margin-container {
+  margin: -10px;
+}
+
+.margined {
+  margin: 10px;
+}
+
+.flex-half {
+  flex-basis: 50%;
+  flex-grow: 1;
+  min-width: 300px;
+}
+
+.flex-third {
+  flex-basis: 33.3%;
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.padded {
+  padding: 20px;
+}
+
+.max-readable {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.text-content {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.image-content {
+  flex-basis: 50%;
+  flex-grow: 1;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.big-logo-section {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.big-logo-section img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.big-logo {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.sub-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-logo {
+  width: 40%;
+}
+
+.sub-logo img {
+  width: 100%;
+}
+
+header {
+  color: #8d8d8d;
+  background-color: #222222;
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #8d8d8d;
+  font-size: 13px;
+  background-color: #222222;
+  padding: 5px;
+}
+
+footer a {
+  color: #8d8d8d;
+}
+
+footer>* {
+  margin: 5px;
+}
+
+footer span {
+  line-height: 25px;
+  vertical-align: middle;
+}
+
+footer svg {
+  vertical-align: middle;
+  height: 25px;
+  fill: #8d8d8d;
+  margin-right: 5px;
+}
+
+.sponsor-section {
+  padding: 20px;
+}
+
+.spon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: -10px;
+}
+
+.sponsor img {
+  max-width: 150px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+}
+
+.sponsor {
+  margin: 10px;
+}
+
+.big-sponsor {
+  flex-grow: 1;
+  max-width: 600px;
+  margin: 10px;
+}
+
+.big-sponsor img {
+  width: 100%;
+}
+
+.bakerloo-line {
+  color: rgb(178, 99, 0);
+}
+
+.central-line {
+  color: rgb(220, 36, 31);
+}
+
+.circle-line {
+  color: rgb(255, 211, 41);
+}
+
+.district-line {
+  color: rgb(0, 125, 50);
+}
+
+.hammersmith-city {
+  color: rgb(244, 169, 190);
+}
+
+.jubilee-line {
+  color: rgb(161, 165, 167);
+}
+
+.metropolitan-line {
+  color: rgb(155, 0, 88);
+}
+
+.northern-line {
+  color: black;
+}
+
+.piccadilly-line {
+  color: rgb(0, 25, 168);
+}
+
+.victoria-line {
+  color: rgb(0, 152, 216);
+}
+
+.waterloo-city-line {
+  color: rgb(147, 206, 186);
+}
