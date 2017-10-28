@@ -50,22 +50,28 @@ section {
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .flex-center-container {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
 }
 
@@ -77,22 +83,37 @@ section {
   margin: 10px;
 }
 
-.flex-half {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.flex-big {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  min-width: 300px;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+  -webkit-flex-basis: 320px;
+      -ms-flex-preferred-size: 320px;
+          flex-basis: 320px;
 }
 
-.flex-third {
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
+.flex-little {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  min-width: 100px;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+  -webkit-flex-basis: 120px;
+      -ms-flex-preferred-size: 120px;
+          flex-basis: 120px;
+}
+
+.responsive-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
 }
 
 .padded {
@@ -102,26 +123,6 @@ section {
 .max-readable {
   max-width: 700px;
   margin: 0 auto;
-}
-
-.text-content {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 20px;
-  min-width: 300px;
-}
-
-.image-content {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  min-height: 300px;
-  min-width: 300px;
 }
 
 .big-logo {
@@ -134,12 +135,15 @@ section {
 .sub-logos {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
 }
 
@@ -154,11 +158,14 @@ section {
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   color: #8d8d8d;
   font-size: 13px;
@@ -196,6 +203,7 @@ footer svg {
 .big-sponsor {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
+          -webkit-flex-grow: 1;
           flex-grow: 1;
   max-width: 600px;
 }
