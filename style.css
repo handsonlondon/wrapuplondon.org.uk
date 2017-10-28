@@ -99,6 +99,10 @@ section {
   margin: 10px;
 }
 
+.remove-child-margins > *:first-child {
+  margin-top: 0;
+}
+
 .flex-big {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
