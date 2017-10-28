@@ -20,14 +20,13 @@ section {
   width: 100%;
 }
 
-.grey-section {
+.whitesmoke-background {
+  background-color: whitesmoke;
+}
+
+.grey-background {
   color: white;
   background-color: rgb(141, 164, 168);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .blue-background {
@@ -40,24 +39,12 @@ section {
   background-color: rgb(214, 53, 53);
 }
 
-.whitesmoke-background {
-  background-color: whitesmoke;
-}
-
 .red-background a {
   color: white;
 }
 
 .red-background a:hover {
   text-decoration: underline;
-}
-
-.donate-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .flex-container {
@@ -68,11 +55,25 @@ section {
       flex-wrap: wrap;
 }
 
+.flex-center-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .margin-container {
   margin: -10px;
 }
 
-.margined {
+.margin-container > * {
   margin: 10px;
 }
 
@@ -123,18 +124,6 @@ section {
   min-width: 300px;
 }
 
-.big-logo-section {
-  background-color: whitesmoke;
-  padding: 20px;
-}
-
-.big-logo-section img {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 .big-logo {
   display: block;
   width: 100%;
@@ -160,12 +149,6 @@ section {
 
 .sub-logo img {
   width: 100%;
-}
-
-header {
-  color: #8d8d8d;
-  background-color: #222222;
-  display: none;
 }
 
 footer {
@@ -203,34 +186,11 @@ footer svg {
   margin-right: 5px;
 }
 
-.sponsor-section {
-  padding: 20px;
-}
-
-.spon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: -10px;
-}
-
-.sponsor img {
+.sponsor-logo {
   max-width: 150px;
   max-height: 100px;
   width: auto;
   height: auto;
-}
-
-.sponsor {
-  margin: 10px;
 }
 
 .big-sponsor {
@@ -238,7 +198,6 @@ footer svg {
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 600px;
-  margin: 10px;
 }
 
 .big-sponsor img {
