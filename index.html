@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -12,269 +13,258 @@
   <meta content="#25285b" name="theme-color">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
   <style>
-  @font-face {
-    font-family: 'BentonSans';
-    src:  url('fonts/BentonSans.woff2') format('woff2'),
-          url('fonts/BentonSans.woff') format('woff');
-  }
+    @font-face {
+      font-family: 'BentonSans';
+      src: url('fonts/BentonSans.woff2') format('woff2'),
+      url('fonts/BentonSans.woff') format('woff');
+    }
 
-  body {
-    font-family: 'BentonSans', sans-serif;
-    line-height: 1.2em;
-    margin: 0;
-    background-color: whitesmoke;
-  }
+    body {
+      font-family: 'BentonSans', sans-serif;
+      line-height: 1.2em;
+      margin: 0;
+      background-color: whitesmoke;
+    }
 
-  * {
-    box-sizing: border-box;
-  }
+    * {
+      box-sizing: border-box;
+    }
 
-  section {
-    width: 100%;
-  }
+    section {
+      width: 100%;
+    }
 
-  .grey-section {
-    color: white;
-    background-color: rgb(141, 164, 168);
-    display: flex;
-    flex-wrap: wrap;
-  }
+    .grey-section {
+      color: white;
+      background-color: rgb(141, 164, 168);
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  .blue-background {
-    color: white;
-    background-color: #25285b;
-  }
+    .blue-background {
+      color: white;
+      background-color: #25285b;
+    }
 
-  .red-background {
-    color: white;
-    background-color: rgb(214, 53, 53);
-  }
+    .red-background {
+      color: white;
+      background-color: rgb(214, 53, 53);
+    }
 
-  .whitesmoke-background {
-    background-color: whitesmoke;
-  }
+    .whitesmoke-background {
+      background-color: whitesmoke;
+    }
 
-  .red-background a {
-    color: white;
-    /*text-decoration: none;*/
-  }
+    .red-background a {
+      color: white;
+    }
 
-  .red-background a:hover {
-    text-decoration: underline;
-  }
+    .red-background a:hover {
+      text-decoration: underline;
+    }
 
-  .donate-section {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    .donate-section {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  .margin-container {
-    margin: -10px;
-  }
+    .margin-container {
+      margin: -10px;
+    }
 
-  .margined {
-    margin: 10px;
-  }
+    .margined {
+      margin: 10px;
+    }
 
-  .flex-half {
-    flex-basis: 50%;
-    flex-grow: 1;
-    min-width: 300px;
-  }
+    .flex-half {
+      flex-basis: 50%;
+      flex-grow: 1;
+      min-width: 300px;
+    }
 
-  .flex-third {
-    flex-basis: 33.3%;
-    flex-grow: 1;
-    min-width: 100px;
-  }
+    .flex-third {
+      flex-basis: 33.3%;
+      flex-grow: 1;
+      min-width: 100px;
+    }
 
-  .padded {
-    padding: 20px;
-  }
+    .padded {
+      padding: 20px;
+    }
 
-  .max-readable {
-    max-width: 700px;
-    margin: 0 auto;
-  }
+    .max-readable {
+      max-width: 700px;
+      margin: 0 auto;
+    }
 
-  .text-content {
-    flex-basis: 50%;
-    flex-grow: 1;
-    padding: 20px;
-    min-width: 300px;
-  }
+    .text-content {
+      flex-basis: 50%;
+      flex-grow: 1;
+      padding: 20px;
+      min-width: 300px;
+    }
 
-  .image-content {
-    flex-basis: 50%;
-    flex-grow: 1;
-    min-height: 300px;
-    min-width: 300px;
-  }
+    .image-content {
+      flex-basis: 50%;
+      flex-grow: 1;
+      min-height: 300px;
+      min-width: 300px;
+    }
 
-  .big-logo-section {
-    background-color: whitesmoke;
-    padding: 20px;
-  }
+    .big-logo-section {
+      background-color: whitesmoke;
+      padding: 20px;
+    }
 
-  .big-logo-section img {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-  }
+    .big-logo-section img {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
 
-  .big-logo {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-  }
+    .big-logo {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
 
-  .sub-logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .sub-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  .sub-logo {
-    width: 40%;
-  }
+    .sub-logo {
+      width: 40%;
+    }
 
-  .sub-logo img {
-    width: 100%;
-  }
+    .sub-logo img {
+      width: 100%;
+    }
 
-  header {
-    color: #8d8d8d;
-    background-color: #222222;
-    display: none;
-  }
+    header {
+      color: #8d8d8d;
+      background-color: #222222;
+      display: none;
+    }
 
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: #8d8d8d;
-    font-size: 13px;
-    background-color: #222222;
-    padding: 5px;
-  }
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: #8d8d8d;
+      font-size: 13px;
+      background-color: #222222;
+      padding: 5px;
+    }
 
-  footer a {
-    color: #8d8d8d;
-  }
+    footer a {
+      color: #8d8d8d;
+    }
 
-  footer > * {
-    margin: 5px;
-  }
+    footer>* {
+      margin: 5px;
+    }
 
-  footer span {
-    line-height: 25px;
-    vertical-align: middle;
-  }
+    footer span {
+      line-height: 25px;
+      vertical-align: middle;
+    }
 
-  /*footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+    footer svg {
+      vertical-align: middle;
+      height: 25px;
+      fill: #8d8d8d;
+      margin-right: 5px;
+    }
 
-  footer li {
-    display: inline;
-  }*/
+    .sponsor-section {
+      padding: 20px;
+    }
 
-  footer svg {
-    vertical-align: middle;
-    height: 25px;
-    fill: #8d8d8d;
-    margin-right: 5px;
-  }
+    .spon {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: -10px;
+    }
 
-  .sponsor-section {
-    padding: 20px;
-  }
+    .sponsor img {
+      max-width: 150px;
+      max-height: 100px;
+      width: auto;
+      height: auto;
+    }
 
-  .spon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: -10px;
-  }
+    .sponsor {
+      margin: 10px;
+    }
 
-  .sponsor img {
-    max-width: 150px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
-  }
+    .big-sponsor {
+      flex-grow: 1;
+      max-width: 600px;
+      margin: 10px;
+    }
 
-  .sponsor {
-    margin: 10px;
-  }
+    .big-sponsor img {
+      width: 100%;
+    }
 
-  .big-sponsor {
-    flex-grow: 1;
-    max-width: 600px;
-    margin: 10px;
-  }
+    .bakerloo-line {
+      color: rgb(178, 99, 0);
+    }
 
-  .big-sponsor img {
-    width: 100%;
-  }
+    .central-line {
+      color: rgb(220, 36, 31);
+    }
 
-  .bakerloo-line {
-    color: rgb(178, 99, 0);
-  }
+    .circle-line {
+      color: rgb(255, 211, 41);
+    }
 
-  .central-line {
-    color: rgb(220, 36, 31);
-  }
+    .district-line {
+      color: rgb(0, 125, 50);
+    }
 
-  .circle-line {
-    color: rgb(255, 211, 41);
-  }
+    .hammersmith-city {
+      color: rgb(244, 169, 190);
+    }
 
-  .district-line {
-    color: rgb(0, 125, 50);
-  }
+    .jubilee-line {
+      color: rgb(161, 165, 167);
+    }
 
-  .hammersmith-city {
-    color: rgb(244, 169, 190);
-  }
+    .metropolitan-line {
+      color: rgb(155, 0, 88);
+    }
 
-  .jubilee-line {
-    color: rgb(161, 165, 167);
-  }
+    .northern-line {
+      color: black;
+    }
 
-  .metropolitan-line {
-    color: rgb(155, 0, 88);
-  }
+    .piccadilly-line {
+      color: rgb(0, 25, 168);
+    }
 
-  .northern-line {
-    color: black;
-  }
+    .victoria-line {
+      color: rgb(0, 152, 216);
+    }
 
-  .piccadilly-line {
-    color: rgb(0, 25, 168);
-  }
-
-  .victoria-line {
-    color: rgb(0, 152, 216);
-  }
-
-  .waterloo-city-line {
-    color: rgb(147, 206, 186);
-  }
-
+    .waterloo-city-line {
+      color: rgb(147, 206, 186);
+    }
   </style>
   <title></title>
 </head>
+
 <body>
   <main>
     <section class="padded whitesmoke-background">
@@ -301,78 +291,75 @@
     </section>
     <section class="donate-section">
       <div class="text-content">
-      <h2>How to donate your coat</h2>
-      <h3>Tube Stations</h3>
-      <p>Monday 13th - Wednesday 15th November (7am - 11am)</p>
-      <ul>
-        <li>Canary Wharf</li>
-        <span class="jubilee-line" title="Jubilee line">●</span>
-        <li>Highbury & Islington</li>
-        <span class="victoria-line" title="Victoria line">●</span>
-        <li>Kings Cross</li>
-        <span class="piccadilly-line" title="Piccadilly line">●</span>
-        <span class="northern-line" title="Northern line">●</span>
-        <span class="hammersmith-city" title="Hammersmith & City line">●</span>
-        <span class="circle-line" title="Circle line">●</span>
-        <span class="metropolitan-line" title="Metropolitan line">●</span>
-        <li>Liverpool Street</li>
-        <span class="central-line" title="Central line">●</span>
-        <span class="hammersmith-city" title="Hammersmith & City line">●</span>
-        <span class="circle-line" title="Circle line">●</span>
-        <span class="metropolitan-line" title="Metropolitan line">●</span>
-        <li>London Bridge</li>
-        <span class="northern-line" title="Northern line">●</span>
-        <span class="jubilee-line" title="Jubilee line">●</span>
-        <li>Victoria</li>
-        <span class="victoria-line" title="Victoria line">●</span>
-        <span class="circle-line" title="Circle line">●</span>
-        <span class="district-line" title="District line">●</span>
-        <li>Waterloo</li>
-        <span class="jubilee-line" title="Jubilee line">●</span>
-        <span class="northern-line" title="Northern line">●</span>
-        <span class="bakerloo-line" title="Bakerloo line">●</span>
-        <span class="waterloo-city-line" title="Waterloo & City line">●</span>
-      </ul>
-      <p>
-        Look for signs throughout the station and keep checking our twitter @WrapUpLondon to find out more information on the day.
-      </p>
-      <h3>Broadgate Centre</h3>
-      <p>Monday 13th - Wednesday 15th November (7am - 11am)</p>
-    </div>
-    <div class="red-background text-content">
-      <h3>Safestore Locations</h3>Monday 13th - Friday 24th November
+        <h2>How to donate your coat</h2>
+        <h3>Tube Stations</h3>
+        <p>Monday 13th - Wednesday 15th November (7am - 11am)</p>
+        <ul>
+          <li>Canary Wharf</li>
+          <span class="jubilee-line" title="Jubilee line">●</span>
+          <li>Highbury & Islington</li>
+          <span class="victoria-line" title="Victoria line">●</span>
+          <li>Kings Cross</li>
+          <span class="piccadilly-line" title="Piccadilly line">●</span>
+          <span class="northern-line" title="Northern line">●</span>
+          <span class="hammersmith-city" title="Hammersmith & City line">●</span>
+          <span class="circle-line" title="Circle line">●</span>
+          <span class="metropolitan-line" title="Metropolitan line">●</span>
+          <li>Liverpool Street</li>
+          <span class="central-line" title="Central line">●</span>
+          <span class="hammersmith-city" title="Hammersmith & City line">●</span>
+          <span class="circle-line" title="Circle line">●</span>
+          <span class="metropolitan-line" title="Metropolitan line">●</span>
+          <li>London Bridge</li>
+          <span class="northern-line" title="Northern line">●</span>
+          <span class="jubilee-line" title="Jubilee line">●</span>
+          <li>Victoria</li>
+          <span class="victoria-line" title="Victoria line">●</span>
+          <span class="circle-line" title="Circle line">●</span>
+          <span class="district-line" title="District line">●</span>
+          <li>Waterloo</li>
+          <span class="jubilee-line" title="Jubilee line">●</span>
+          <span class="northern-line" title="Northern line">●</span>
+          <span class="bakerloo-line" title="Bakerloo line">●</span>
+          <span class="waterloo-city-line" title="Waterloo & City line">●</span>
+        </ul>
+        <p>
+          Look for signs throughout the station and keep checking our twitter @WrapUpLondon to find out more information on the day.
+        </p>
+        <h3>Broadgate Centre</h3>
+        <p>Monday 13th - Wednesday 15th November (7am - 11am)</p>
+      </div>
+      <div class="red-background text-content">
+        <h3>Safestore Locations</h3>Monday 13th - Friday 24th November
 
 
-<h4><a href="https://www.safestore.co.uk/storage/london/chiswick/">Chiswick</a></h4>
-<p>
-Nearest stations: Gunnersbury tube, Chiswick national rail station
-</p>
+        <h4><a href="https://www.safestore.co.uk/storage/london/chiswick/">Chiswick</a></h4>
+        <p>
+          Nearest stations: Gunnersbury tube, Chiswick national rail station
+        </p>
 
-<h4><a href="https://www.safestore.co.uk/storage/london/clapham/">Clapham</a></h4>
-<p>
-Nearest stations: Clapham North tube, Clapham Highstreet national rail station
-</p>
+        <h4><a href="https://www.safestore.co.uk/storage/london/clapham/">Clapham</a></h4>
+        <p>
+          Nearest stations: Clapham North tube, Clapham Highstreet national rail station
+        </p>
 
-<h4><a href="https://www.safestore.co.uk/storage/london/notting-hill/">Notting Hill</a></h4>
-<p>
-Nearest stations: Ladbroke Grove tube, Holland Park tube
-</p>
+        <h4><a href="https://www.safestore.co.uk/storage/london/notting-hill/">Notting Hill</a></h4>
+        <p>
+          Nearest stations: Ladbroke Grove tube, Holland Park tube
+        </p>
 
-<h4><a href="https://www.safestore.co.uk/storage/london/kings-cross">Kings Cross</a></h4>
-<p>
-Nearest stations: Angel tube, Kings Cross/St Pancras tube and national rail station
-</p>
+        <h4><a href="https://www.safestore.co.uk/storage/london/kings-cross">Kings Cross</a></h4>
+        <p>
+          Nearest stations: Angel tube, Kings Cross/St Pancras tube and national rail station
+        </p>
 
-
-
-
-      <h3>Collect Plus</h3>Send coats in the post to Chiswick Safestore by Friday 24th November
-      <p><em>Chiswick Safestore<br>
+        <h3>Collect Plus</h3>Send coats in the post to Chiswick Safestore by Friday 24th November
+        <p><em>Chiswick Safestore<br>
       22 Sutton Lane North,<br>
       Great West Road,<br>
       Chiswick,<br>
       W4 4LD</em></p>
-    </div>
+      </div>
     </section>
 
     <section class="grey-section">
@@ -386,17 +373,13 @@ Nearest stations: Angel tube, Kings Cross/St Pancras tube and national rail stat
           <div class="flex-third margined">
             <h3>At a tube station</h3>
             <p>
-              9th – 15th November<br>
-              7am to 9am<br>
-              9am to 11am<br>
+              9th – 15th November<br> 7am to 9am<br> 9am to 11am<br>
             </p>
           </div>
           <div class="flex-third margined">
             <h3>At a sorting session</h3>
             <p>
-              15th – 24th November<br>
-              Various times<br>
-              Safestore locations<br>
+              15th – 24th November<br> Various times<br> Safestore locations<br>
             </p>
           </div>
           <div class="flex-third margined">
@@ -411,36 +394,32 @@ Nearest stations: Angel tube, Kings Cross/St Pancras tube and national rail stat
         </div>
         <h3>Got a voice?</h3>
         <p>
-We believe our campaign is most powerful when our volunteers shout about it and spread the word to their friends, family, community and colleagues. Share our posts on social media, or write your own and use the #WrapUpLondon and #HandsOnHeroes hashtags.
+          We believe our campaign is most powerful when our volunteers shout about it and spread the word to their friends, family, community and colleagues. Share our posts on social media, or write your own and use the #WrapUpLondon and #HandsOnHeroes hashtags.
         </p>
 
       </div>
-
-
-
-
-
-
-
-
     </section>
 
     <section class="flex-container blue-background">
       <div class="flex-half padded">
         <h2>How your coat helps</h2>
         <p>
-Once we’ve collected coats from the public, the volunteers get to work at our sorting sessions. We spend many hours sorting coats into different piles for men, women, children and babies. We check pockets, mend buttons, and make sure the coat is in good enough condition to be given away. If you’d like to lend a helping hand at a sorting session, click here.
-</p>
-  <p>
-In December, the sorted coats will be distributed to charities across London. We carefully select charities that provide frontline services to the homeless, the elderly, refugees, children and families living in poverty and people fleeing domestic violence. These coats are intended for people, not charity shops. If you can help us transport the coats from Safestore to charity, get in touch today.
-</p>
-  <p>
-Wrap Up London don’t distribute the coats to those in need directly, because we want to help charities create lasting exchanges with those they set out to help. SO when a vulnerable Londoner reaches out to a charity for a coat this winter, they will also discover the other resources and forms of support available to them.
-</p>
-  <p>
-It’s amazing that a coat YOU donated could kick-start a relationship between those in need and the charities that can help them by providing year-round services and support.
-Wrap Up London is now in its seventh year, and our impact continues to grow thanks to the Londoners who take the time to find and donate their old coats, and the incredible volunteers that help run the entire campaign.  The campaign is ran by Hands On London, a charity ran by volunteers – for volunteers. Click here to read more about our story, and the success of Wrap Up London in previous years.
-</p>
+          Once we’ve collected coats from the public, the volunteers get to work at our sorting sessions. We spend many hours sorting coats into different piles for men, women, children and babies. We check pockets, mend buttons, and make sure the coat is in good
+          enough condition to be given away. If you’d like to lend a helping hand at a sorting session, click here.
+        </p>
+        <p>
+          In December, the sorted coats will be distributed to charities across London. We carefully select charities that provide frontline services to the homeless, the elderly, refugees, children and families living in poverty and people fleeing domestic violence.
+          These coats are intended for people, not charity shops. If you can help us transport the coats from Safestore to charity, get in touch today.
+        </p>
+        <p>
+          Wrap Up London don’t distribute the coats to those in need directly, because we want to help charities create lasting exchanges with those they set out to help. SO when a vulnerable Londoner reaches out to a charity for a coat this winter, they will also
+          discover the other resources and forms of support available to them.
+        </p>
+        <p>
+          It’s amazing that a coat YOU donated could kick-start a relationship between those in need and the charities that can help them by providing year-round services and support. Wrap Up London is now in its seventh year, and our impact continues to grow thanks
+          to the Londoners who take the time to find and donate their old coats, and the incredible volunteers that help run the entire campaign. The campaign is ran by Hands On London, a charity ran by volunteers – for volunteers. Click here to read
+          more about our story, and the success of Wrap Up London in previous years.
+        </p>
       </div>
 
       <div class="content image-content" style="background: url(images/sorting.jpg) no-repeat center center; background-size: cover;">
@@ -452,48 +431,44 @@ Wrap Up London is now in its seventh year, and our impact continues to grow than
       <div class="padded max-readable">
         <h2>Host a collection</h2>
         <p>
-          Here at Wrap Up London, we champion community spirit. The more people who work together to support the Wrap Up London campaign, the more coats we collect and the more people we can help keep warm this winter.<br>
-          Whether it’s at your school, place of work, place of worship, favourite club, local store, or your neighbourhood, why not host your own collection? It’s easy to join the #HandsOnHeroes team and collect coats wherever you’re based.
+          Here at Wrap Up London, we champion community spirit. The more people who work together to support the Wrap Up London campaign, the more coats we collect and the more people we can help keep warm this winter.<br> Whether it’s at your school,
+          place of work, place of worship, favourite club, local store, or your neighbourhood, why not host your own collection? It’s easy to join the #HandsOnHeroes team and collect coats wherever you’re based.
         </p>
         <h3>How to host a collection:</h3>
-      <div class="flex-container margin-container">
-      <div class="flex-third margined">
+        <div class="flex-container margin-container">
+          <div class="flex-third margined">
+            <p>
+              Download and print our free customisable poster.<br> Be sure to write where you’re holding your collection on the poster!
+            </p>
+          </div>
+          <div class="flex-third margined">
+            <p>
+              Do you need any help setting up and spreading the word? Ask your friends, family and colleagues to get involved!
+            </p>
+          </div>
+          <div class="flex-third margined">
+            <p>
+              Collect the coats – we take all kinds! We launch on the 13 November 2017, but feel free to choose your own start date.
+            </p>
+          </div>
+        </div>
+        <div class="flex-container margin-container">
+          <div class="flex-half margined">
+            <p>
+              Send them to Chiswick Safestore – drop them off yourself or send them in the post.<br> (Tip: download a free postage label from Collect+ before they’re all gone!)
+            </p>
+          </div>
+          <div class="flex-half margined">
+            <p>
+              All coats must be donated by 24 November 2017.<br> Then give yourself a well-deserved pat on the back!
+            </p>
+          </div>
+        </div>
         <p>
-          Download and print our free customisable poster.<br>
-          Be sure to write where you’re holding your collection on the poster!
+          Get creative with your promotion!<br> Create your own poster, give a presentation to your peers, award a prize to the person who donates the most coats… the choice is up to you! Wrap Up London campaigns in such diverse cities across the globe
+          and we can’t wait to see what our community of volunteers come up with next.<br> Use the #WrapUpLondon hashtag on social media to send us photos and updates, so that we can share the great work you’re doing with the rest of our #HandsOnHeroes!
         </p>
       </div>
-      <div class="flex-third margined">
-        <p>
-          Do you need any help setting up and spreading the word? Ask your friends, family and colleagues to get involved!
-        </p>
-      </div>
-      <div class="flex-third margined">
-        <p>
-          Collect the coats – we take all kinds! We launch on the 13 November 2017, but feel free to choose your own start date.
-        </p>
-      </div>
-    </div>
-    <div class="flex-container margin-container">
-      <div class="flex-half margined">
-        <p>
-          Send them to Chiswick Safestore – drop them off yourself or send them in the post.<br>
-          (Tip: download a free postage label from Collect+ before they’re all gone!)
-        </p>
-      </div>
-      <div class="flex-half margined">
-        <p>
-          All coats must be donated by 24 November 2017.<br>
-          Then give yourself a well-deserved pat on the back!
-        </p>
-      </div>
-    </div>
-        <p>
-          Get creative with your promotion!<br>
-          Create your own poster, give a presentation to your peers, award a prize to the person who donates the most coats… the choice is up to you! Wrap Up London campaigns in such diverse cities across the globe and we can’t wait to see what our community of volunteers come up with next.<br>
-          Use the #WrapUpLondon hashtag on social media to send us photos and updates, so that we can share the great work you’re doing with the rest of our #HandsOnHeroes!
-        </p>
-    </div>
 
     </section>
     <section class="sponsor-section">
@@ -523,18 +498,17 @@ Wrap Up London is now in its seventh year, and our impact continues to grow than
     </section>
   </main>
   <footer>
-  <a href="https://twitter.com/wrapuplondon"><svg id="twitter-logo" version="1.1" viewBox="0 0 256 256"><path d="m256 48.622c-9.411 4.1824-19.539 7.0036-30.166 8.2662 10.85-6.4945 19.17-16.782 23.094-29.054-10.149 6.0217-21.384 10.391-33.352 12.75-9.58-10.204-23.23-16.584-38.34-16.584-29.002 0-52.517 23.51-52.517 52.512 0 4.1097 0.46249 8.1155 1.3615 11.965-43.646-2.192-82.351-23.094-108.26-54.865-4.521 7.7518-7.1089 16.771-7.1089 26.404 0 18.216 9.2707 34.291 23.364 43.705-8.6056-0.27536-16.707-2.6393-23.79-6.5724-0.0052 0.21822-0.0052 0.44162-0.0052 0.66503 0 25.438 18.105 46.656 42.134 51.488-4.4067 1.195-9.0473 1.8392-13.839 1.8392-3.3882 0-6.6776-0.32732-9.8839-0.94559 6.688 20.86 26.082 36.047 49.061 36.468-17.97 14.09-40.612 22.48-65.223 22.48-4.2352 0-8.4185-0.24-12.529-0.73 23.25 14.9 50.854 23.59 80.511 23.59 96.609 0 149.43-80.01 149.43-149.4 0-2.2757-0.0468-4.5461-0.1455-6.801 10.27-7.392 19.17-16.646 26.21-27.177z"/></svg><span>@wrapuplondon</span></a>
-  <a href="https://www.instagram.com/explore/tags/wrapuplondon/"><svg id="instagram-logo" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 258.8 258.8" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <a href="https://twitter.com/wrapuplondon"><svg id="twitter-logo" version="1.1" viewBox="0 0 256 256"><path d="m256 48.622c-9.411 4.1824-19.539 7.0036-30.166 8.2662 10.85-6.4945 19.17-16.782 23.094-29.054-10.149 6.0217-21.384 10.391-33.352 12.75-9.58-10.204-23.23-16.584-38.34-16.584-29.002 0-52.517 23.51-52.517 52.512 0 4.1097 0.46249 8.1155 1.3615 11.965-43.646-2.192-82.351-23.094-108.26-54.865-4.521 7.7518-7.1089 16.771-7.1089 26.404 0 18.216 9.2707 34.291 23.364 43.705-8.6056-0.27536-16.707-2.6393-23.79-6.5724-0.0052 0.21822-0.0052 0.44162-0.0052 0.66503 0 25.438 18.105 46.656 42.134 51.488-4.4067 1.195-9.0473 1.8392-13.839 1.8392-3.3882 0-6.6776-0.32732-9.8839-0.94559 6.688 20.86 26.082 36.047 49.061 36.468-17.97 14.09-40.612 22.48-65.223 22.48-4.2352 0-8.4185-0.24-12.529-0.73 23.25 14.9 50.854 23.59 80.511 23.59 96.609 0 149.43-80.01 149.43-149.4 0-2.2757-0.0468-4.5461-0.1455-6.801 10.27-7.392 19.17-16.646 26.21-27.177z"/></svg><span>@wrapuplondon</span></a>
+    <a href="https://www.instagram.com/explore/tags/wrapuplondon/"><svg id="instagram-logo" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 258.8 258.8" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
           <g transform="translate(-126.7,-203.1)">
             <path d="m378.7 247.7c-3.3-8.5-7.7-15.7-14.9-22.9s-14.4-11.6-22.9-14.9c-8.2-3.2-17.7-5.4-31.4-6-13.8-0.6-18.2-0.8-53.4-0.8s-39.6 0.1-53.4 0.8c-13.8 0.6-23.2 2.8-31.4 6-8.5 3.3-15.7 7.7-22.9 14.9s-11.6 14.4-14.9 22.9c-3.2 8.2-5.4 17.7-6 31.4-0.6 13.8-0.8 18.2-0.8 53.4s0.1 39.6 0.8 53.4c0.6 13.8 2.8 23.2 6 31.4 3.3 8.5 7.7 15.7 14.9 22.9s14.4 11.6 22.9 14.9c8.2 3.2 17.7 5.4 31.4 6 13.8 0.6 18.2 0.8 53.4 0.8s39.6-0.1 53.4-0.8c13.8-0.6 23.2-2.8 31.4-6 8.5-3.3 15.7-7.7 22.9-14.9s11.6-14.4 14.9-22.9c3.2-8.2 5.4-17.7 6-31.4 0.6-13.8 0.8-18.2 0.8-53.4s-0.1-39.6-0.8-53.4c-0.6-13.8-2.8-23.2-6-31.4zm-17.3 137.1c-0.6 12.6-2.7 19.5-4.5 24-2.3 6-5.2 10.4-9.7 14.9s-8.8 7.3-14.9 9.7c-4.6 1.8-11.4 3.9-24 4.5-13.7 0.6-17.7 0.8-52.3 0.8s-38.7-0.1-52.3-0.8c-12.6-0.6-19.5-2.7-24-4.5-6-2.3-10.4-5.2-14.9-9.7s-7.3-8.8-9.7-14.9c-1.8-4.6-3.9-11.4-4.5-24-0.6-13.7-0.8-17.8-0.8-52.3s0.1-38.7 0.8-52.3c0.6-12.6 2.7-19.5 4.5-24 2.3-6 5.2-10.4 9.7-14.9s8.8-7.3 14.9-9.7c4.6-1.8 11.4-3.9 24-4.5 13.7-0.6 17.8-0.8 52.3-0.8s38.7 0.1 52.3 0.8c12.6 0.6 19.5 2.7 24 4.5 6 2.3 10.4 5.2 14.9 9.7s7.3 8.8 9.7 14.9c1.8 4.6 3.9 11.4 4.5 24 0.6 13.7 0.8 17.8 0.8 52.3s-0.2 38.7-0.8 52.3z"/>
             <path d="m256 266c-36.7 0-66.5 29.8-66.5 66.5s29.8 66.5 66.5 66.5 66.5-29.8 66.5-66.5-29.8-66.5-66.5-66.5zm0 109.7c-23.8 0-43.2-19.3-43.2-43.2 0-23.8 19.3-43.2 43.2-43.2s43.2 19.3 43.2 43.2c0 23.8-19.4 43.2-43.2 43.2z"/>
             <circle cy="263.4" cx="325.1" r="15.5"/>
           </g>
         </svg><span>#wrapuplondon<span></a>
-        <span>© Hands On London 2017</span>
-        <span>Registered Charity 1140291</span>
-
-
+    <span>© Hands On London 2017</span>
+    <span>Registered Charity 1140291</span>
   </footer>
 </body>
+
 </html>
