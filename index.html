@@ -50,6 +50,10 @@
     background-color: rgb(214, 53, 53);
   }
 
+  .whitesmoke-background {
+    background-color: whitesmoke;
+  }
+
   .red-background a {
     color: white;
     /*text-decoration: none;*/
@@ -122,6 +126,27 @@
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  .big-logo {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .sub-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-logo {
+    width: 40%;
+  }
+
+  .sub-logo img {
+    width: 100%;
   }
 
   header {
@@ -251,17 +276,19 @@
   <title></title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li>How to donate</li>
-        <li>Sponsors</li>
-      </ul>
-    </nav>
-  </header>
   <main>
-    <section class="big-logo-section">
-      <img alt="Wrap Up London" src="logo.svg">
+    <section class="padded whitesmoke-background">
+      <img class="big-logo" alt="Wrap Up London" src="logos/wrap_up_london.svg">
+      <p style="text-align: center;">Brought to you by</p>
+      <div class="sub-logos margin-container">
+        <a class="sub-logo margined" href="//www.handsonlondon.org.uk">
+          <img alt="Hands On London" src="logos/hands_on_london.svg">
+        </a>
+        <span class="margined">and</span>
+        <a class="sub-logo margined" href="//www.williamblair.com">
+          <img alt="William Blair" src="logos/william_blair.svg">
+        </a>
+      </div>
     </section>
     <section class="grey-section">
       <div class="content text-content">
