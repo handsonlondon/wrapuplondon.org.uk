@@ -172,6 +172,7 @@ section {
 
 .sub-logo {
   width: 40%;
+  max-width: 380px;
 }
 
 .sub-logo img {
