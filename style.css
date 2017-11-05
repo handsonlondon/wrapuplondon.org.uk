@@ -193,6 +193,19 @@ section {
   min-height: 300px;
 }
 
+.right-image {
+  float: right;
+  width: 300px;
+  max-width: 100%;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.right-image img {
+  display: block;
+  width: 100%;
+}
+
 .padded {
   padding: 20px;
 }
