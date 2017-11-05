@@ -31,8 +31,11 @@ a {
   box-sizing: border-box;
 }
 
-nav {
+header {
   width: 100%;
+}
+
+nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
