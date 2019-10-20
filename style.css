@@ -1,10 +1,11 @@
 @font-face {
-  font-family: 'BentonSans';
-  src: url('fonts/BentonSans.woff2') format('woff2'), url('fonts/BentonSans.woff') format('woff');
+  font-family: "BentonSans";
+  src: url("fonts/BentonSans.woff2") format("woff2"),
+    url("fonts/BentonSans.woff") format("woff");
 }
 
 body {
-  font-family: 'BentonSans', sans-serif;
+  font-family: "BentonSans", sans-serif;
   line-height: 1.2em;
   margin: 0;
   background-color: whitesmoke;
@@ -48,12 +49,12 @@ nav {
   padding: 10px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav div {
@@ -63,12 +64,12 @@ nav div {
   display: flex;
   -webkit-box-pack: right;
   -webkit-justify-content: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav a {
@@ -157,11 +158,11 @@ section {
   margin: -10px;
 }
 
-.margin-container>* {
+.margin-container > * {
   margin: 10px;
 }
 
-.remove-child-margins>*:first-child {
+.remove-child-margins > *:first-child {
   margin-top: 0;
 }
 
@@ -273,7 +274,7 @@ footer a {
   color: #8d8d8d;
 }
 
-footer>* {
+footer > * {
   margin: 5px;
 }
 
