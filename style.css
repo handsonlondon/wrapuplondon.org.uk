@@ -291,7 +291,7 @@ footer img {
 
 .little-logo {
   max-width: 150px;
-  height: 100px;
+  max-height: 100px;
   text-align: center;
 }
 
